@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #161619;
+}
+
+.container {
+    height: 868px;
+    width: 550px;
+    background-color: #23252C;
+    border-radius: 0.5%;
+}
+
+.card {
+    height: 780px;
+    width: 317px;
+    border: 1px solid white;
+    border-radius: 1%;
+}
