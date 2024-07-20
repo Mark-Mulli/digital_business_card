@@ -24,14 +24,18 @@ body {
 
 .cardBody {
     background-color: #1A1B21;
-    padding: 70px 45px;
+    padding: 50px 35px;
+    
 }
 
 .topBody {
     text-align: center;
+    display: grid;
+    row-gap: 1rem;
+    padding-bottom: 20px;
 }
 
-.head1, .info-section > p {
+.head1 {
     color: #FFF;
 }
 
@@ -39,6 +43,28 @@ body {
     color: #F3BF99;
 }
 
-.p_graph , .info-section > h3{ 
+.p_graph , .about > h3, .interest > h3 { 
     color: #F5F5F5;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    padding: 9px 27px;
+    border-radius: 6px;
+    border: none;
+
+}
+.info-section {
+    display: grid;
+    row-gap: 1rem;
+    padding-top: 15px;
+}
+
+.about > p, .interest > p {
+    color: #DCDCDC;
+    padding-top: 3px;
 }
