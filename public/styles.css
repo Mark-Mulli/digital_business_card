@@ -19,6 +19,26 @@ body {
 .card {
     height: 780px;
     width: 317px;
-    border: 1px solid white;
     border-radius: 1%;
+}
+
+.cardBody {
+    background-color: #1A1B21;
+    padding: 70px 45px;
+}
+
+.topBody {
+    text-align: center;
+}
+
+.head1, .info-section > p {
+    color: #FFF;
+}
+
+.head5 {
+    color: #F3BF99;
+}
+
+.p_graph , .info-section > h3{ 
+    color: #F5F5F5;
 }
