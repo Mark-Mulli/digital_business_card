@@ -9,23 +9,53 @@ body {
     background-color: #161619;
 }
 
+.row {
+    display: flex;
+}
 .container {
-    height: 868px;
+    height: 950px;
     width: 550px;
     background-color: #23252C;
     border-radius: 0.5%;
+    display: flex;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 40px;
 }
-
 .card {
-    height: 780px;
+    height: 580px;
     width: 317px;
-    border-radius: 1%;
+    margin-top: 50px;
 }
 
 .cardBody {
     background-color: #1A1B21;
     padding: 50px 35px;
-    
+    margin-top: -3.6px;
+}
+
+.cardBody.whiteBg {
+    background-color: #F5F5F5;
+}
+
+.cardBody.whiteBg > .topBody > .head1 {
+    color: #2B283A;
+}
+
+.cardBody.whiteBg > .topBody > .head5 {
+    color: #F47D27;
+}
+.cardBody.whiteBg > .buttons > #mail {
+    border: 1px solid #D1D5DB;
+}
+
+.cardBody.whiteBg > .info-section > .about > h3, .cardBody.whiteBg > .info-section > .interest > h3 {
+    color: #2B283A;
+}
+
+.cardBody.whiteBg > .topBody > .p_graph, .cardBody.whiteBg > .info-section > .about > p, .cardBody.whiteBg > .info-section > .interest > p  {
+    color: #4A4E74;
 }
 
 .topBody {
@@ -41,6 +71,13 @@ body {
 
 .head5 {
     color: #F3BF99;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.p_graph {
+    font-weight: 300;
+    font-size: 12px;
 }
 
 .p_graph , .about > h3, .interest > h3 { 
@@ -52,12 +89,21 @@ body {
     justify-content: space-between;
 }
 
+.buttons > #linkedln {
+    background-color: #5093E2;
+    color: #FFF;
+}
+
 .btn {
     padding: 9px 27px;
     border-radius: 6px;
     border: none;
-
 }
+
+.btn i {
+    font-size: 17px;
+}
+
 .info-section {
     display: grid;
     row-gap: 1rem;
@@ -67,4 +113,34 @@ body {
 .about > p, .interest > p {
     color: #DCDCDC;
     padding-top: 3px;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.footer {
+    background-color: #161619;
+    display: flex;
+    justify-content: center;
+    padding: 20px 35px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.footerIcon {
+    margin: 0 10px;
+    border-radius: 3px;
+    background-color: #918E9B;
+    padding: 2px 3px;
+}
+
+.footerIcon i {
+    font-size: 22px;
+}
+
+.footer.white {
+    background-color: #D5D4D8;
+}
+
+.footer.white > .footerIcon > i {
+    color: #D5D4D8;
 }

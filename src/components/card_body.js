@@ -1,8 +1,8 @@
 import React from "react";
 
-export default function CardBody() {
+export default function CardBody( {isWhiteBg} ) {
     return (
-        <div className="cardBody">
+        <div className= {`cardBody ${isWhiteBg ? 'whiteBg' : ''}`}>
             <div className="topBody">
                 <h1 className="head1">Laura Smith</h1>
                 <h5 className="head5">Frontend Developer</h5>
@@ -10,8 +10,8 @@ export default function CardBody() {
             </div>
 
             <div className="buttons">
-                <button type= "submit" className="btn">Email</button>
-                <button type= "submit" className="btn">LinkedIn</button>
+                <button type= "submit" className="btn" id="mail"><i class="ri-mail-fill"></i> Email</button>
+                <button type= "submit" className="btn" id="linkedln"><i class="ri-linkedin-box-fill"></i> LinkedIn</button>
             </div>
         
             <div className="info-section">
